@@ -23,7 +23,7 @@ function addTodo() {
     const deleteBtn = document.createElement('button');
     deleteBtn.textContent = 'Delete';
     // deleteBtn.style.textAlign = 'left'
-    // deleteBtn.style.padding = '3px 5px'
+    deleteBtn.style.padding = '3px 5px'
     deleteBtn.onclick = function () {
         todoList.removeChild(listItem);
     };
@@ -31,7 +31,7 @@ function addTodo() {
     const editBtn = document.createElement('button')
     editBtn.textContent = 'Edit'
     // editBtn.style.marginLeft= '10px'
-    // editBtn.style.padding = '3px 5px'
+    editBtn.style.padding = '3px 5px'
     editBtn.onclick = function () {
         const newTask = prompt('Edi your task', taskText.textContent)
         if(newTask !== null && newTask.trim() !== '') {
