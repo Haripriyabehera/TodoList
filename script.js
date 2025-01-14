@@ -53,5 +53,3 @@ function addTodo() {
     todoInput.value = '';
 }
 
-/*i am creating a function when the user give the input and click the add button function get executed now i created two varibale n assing to it elemnet then 
-i will create another varible to store user input then using if condition check if user does not give any value the alert messege show to the user then i will create dynaamic tags frst i will create li tag in where user input get show the i create another  */
