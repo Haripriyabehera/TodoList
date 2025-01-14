@@ -39,17 +39,32 @@ function addTodo() {
         }
     }
 
-   
+   const checkBtn = document.createElement('button')
+   checkBtn.textContent = 'check'
+   checkBtn.onclick = function () {
+    if (taskText.style.textDecoration === 'line-through') {
+        taskText.style.textDecoration = 'none';
+        taskText.style.color = 'black';
+        
+    } else {
+        taskText.style.textDecoration = 'line-through';
+        taskText.style.color = 'gray';
+        
+    }
+   }
+    todoList.appendChild(listItem);
 
     listItem.appendChild(taskText);
     listItem.appendChild(buttonContainer)
-    todoList.appendChild(listItem);
+   
 
+    
     buttonContainer.appendChild(deleteBtn)
     buttonContainer.appendChild(editBtn)
+    buttonContainer.appendChild(checkBtn)
 
      
 
     todoInput.value = '';
-}
 
+}
